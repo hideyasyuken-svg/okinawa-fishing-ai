@@ -1,6 +1,6 @@
 {
-  "name": "沖縄釣りAI",
-  "short_name": "釣りAI",
+  "name": "沖縄専用釣りAIアプリ",
+  "short_name": "沖縄専用釣りAIアプリ",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
