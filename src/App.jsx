@@ -11,30 +11,26 @@ export function App() {
   }, [tab]);
 
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif" }}>
-      <header
-        style={{
-          padding: 12,
-          borderBottom: "1px solid #ddd",
-          display: "flex",
-          gap: 12,
-          alignItems: "center",
-          flexWrap: "wrap",
-        }}
-      >
-        <h1 style={{ margin: 0, fontSize: 18 }}>沖縄 釣り情報</h1>
+    <div style={{ padding: 16 }}>
+      <h1>沖縄 釣り情報</h1>
 
-        <nav style={{ display: "flex", gap: 8 }}>
-          <button onClick={() => setTab("dashboard")} disabled={tab === "dashboard"}>
-            ダッシュボード
-          </button>
-          <button onClick={() => setTab("spots")} disabled={tab === "spots"}>
-            釣り場管理
-          </button>
-        </nav>
-      </header>
+      <div style={{ display: "flex", gap: 8, marginBottom: 16 }}>
+        <button
+          onClick={() => setTab("dashboard")}
+          disabled={tab === "dashboard"}
+        >
+          ダッシュボード
+        </button>
 
-      <main>{body}</main>
+        <button
+          onClick={() => setTab("spots")}
+          disabled={tab === "spots"}
+        >
+          釣り場管理
+        </button>
+      </div>
+
+      {body}
     </div>
   );
 }
