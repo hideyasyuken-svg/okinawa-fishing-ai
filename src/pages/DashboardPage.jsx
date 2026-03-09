@@ -505,6 +505,49 @@ const nextChanceTime = getNextChanceTime(bestTimeToday, fishingScore, nowMs);
         padding: 16,
       }}
     >
+      <div
+  style={{
+    background: "#fff",
+    borderRadius: 16,
+    padding: 16,
+    marginBottom: 20,
+    boxShadow: "0 6px 16px rgba(15,23,42,0.06)",
+    border: "1px solid #e5e7eb",
+  }}
+>
+  <div
+    style={{
+      fontSize: 20,
+      fontWeight: 800,
+      marginBottom: 12,
+      color: "#0f172a",
+    }}
+  >
+    🗾 沖縄釣りマップ
+  </div>
+
+  <img
+  src="/okinawa-map.png"
+  alt="沖縄釣りマップ"
+  style={{
+    width: "100%",
+    maxHeight: 260,
+    objectFit: "cover",
+    borderRadius: 12
+  }}
+/>
+
+  <div
+    style={{
+      marginTop: 10,
+      fontSize: 13,
+      color: "#64748b",
+      lineHeight: 1.6,
+    }}
+  >
+    沖縄本島の釣りエリアをイメージで確認できます。
+  </div>
+</div>
       <div style={{ maxWidth: 1100, margin: "0 auto", display: "grid", gap: 16 }}>
         <div
           style={{
